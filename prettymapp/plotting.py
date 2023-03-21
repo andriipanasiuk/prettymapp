@@ -70,7 +70,7 @@ class Plot:
         self.bg_buffer_y = (self.bg_buffer / 100) * self.ydif
 
         self.fig, self.ax = subplots(
-            1, 1, figsize=(20, 20), constrained_layout=True, dpi=1200
+            1, 1, figsize=(20, 20), constrained_layout=True, dpi=2000
         )
         self.ax.set_aspect(1 / np.cos(self.ymid * np.pi / 180))
 
