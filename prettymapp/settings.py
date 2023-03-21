@@ -1,5 +1,5 @@
 LC_SETTINGS = {
-    "urban": {"building": True, "landuse": ["construction", "commercial"]},
+    "urban": {"building": True},
     "water": {
         "natural": ["water", "bay"],
         "place": ["sea"],
