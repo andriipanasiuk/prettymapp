@@ -188,7 +188,7 @@ with st.spinner("Creating map... (may take up to a minute)"):
     }
     fig = st_plot_all(_df=df, **config)
     # result_container.write(html, unsafe_allow_html=True)
-    st.pyplot(fig, pad_inches=0, bbox_inches="tight", transparent=True, dpi=300)
+    st.pyplot(fig, pad_inches=0, bbox_inches="tight", transparent=True, dpi=750)
 
 # svg_string = plt_to_svg(fig)
 # html = svg_to_html(svg_string)
