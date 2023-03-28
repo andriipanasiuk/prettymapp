@@ -10,7 +10,7 @@ from utils import (
     get_colors_from_style,
     gdf_to_bytesio_geojson,
     svg_to_html,
-    plt_to_svg,
+#     plt_to_svg,
     slugify,
 )
 from prettymapp.geo import GeoCodingError, get_aoi
