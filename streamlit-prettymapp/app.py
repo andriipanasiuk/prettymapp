@@ -191,21 +191,22 @@ with st.spinner("Creating map... (may take up to a minute)"):
     }
     fig = st_plot_all(_df=df, **config)
     # result_container.write(html, unsafe_allow_html=True)
-    st.pyplot(fig, pad_inches=0, bbox_inches="tight", transparent=True, dpi=600)
+#     st.pyplot(fig, pad_inches=0, bbox_inches="tight", transparent=True, dpi=600)
 
 # svg_string = plt_to_svg(fig)
 # html = svg_to_html(svg_string)
 # st.write("")
-# fname = slugify(address)
+fname = slugify(address)
+img_format = "png"
 # img_format = st.selectbox("Download image as", ["svg", "png", "jpg"], index=0)
 # if img_format == "svg":
 #     data = svg_string
 # elif img_format == "png":
-#     import io
+import io
 
-#     data = io.BytesIO()
-#     fig.savefig(data, pad_inches=0, bbox_inches="tight", transparent=True)
-# st.download_button(label="Download image", data=data, file_name=f"{fname}.{img_format}")
+data = io.BytesIO()
+fig.savefig(data, pad_inches=0, bbox_inches="tight", transparent=True)
+st.download_button(label="Download image", data=data, file_name=f"{fname}.{img_format}")
 
 st.markdown("</br>", unsafe_allow_html=True)
 st.markdown("</br>", unsafe_allow_html=True)
