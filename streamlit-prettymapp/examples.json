@@ -1,8 +1,8 @@
 {
     "Macau": {
-        "address": "Грушевського 20, Вінниця",
+        "address": "Грушевського 30, Вінниця",
         "custom_title": "Вінниця",
-        "radius": 1400,
+        "radius": 1500,
         "style": "Peach",
         "shape": "circle",
         "contour_width": 0,
@@ -14,7 +14,7 @@
         "text_x": 19,
         "text_y": -45,
         "text_rotation": -24,
-        "bg_shape": "circle",
+        "bg_shape": null,
         "bg_buffer": 2,
         "bg_color": "#F2F4CB"
     },
